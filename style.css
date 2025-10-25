@@ -1,0 +1,106 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(assets/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    color: aliceblue;
+}
+
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+
+.header-flex h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+.container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.801);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+
+
+
+.bloco-texto-imagem {
+   margin-bottom: 30px;
+   overflow: visible; /* Permite que o texto flua ao redor da imagem */
+   clear: both;
+}
+
+
+.bloco-texto-imagem img {
+    float: left; /* Faz a imagem flutuar à esquerda do texto */
+    width: 200px; /* Largura da imagem (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção */
+    margin-right: 20px; /* Espaço à direita da imagem para separar do texto */
+    margin-bottom: 20px; /* Espaço abaixo da imagem (se o texto for curto) */
+    border: 2px solid #555; /* Opcional: borda */
+    border-radius: 5px; /* Opcional: cantos arredondados */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para hover */
+}
+
+
+.bloco-texto-imagem img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+
+.bloco-texto-imagem p {
+    /* Resetar margens padrão se necessário, mas o float já faz o trabalho aqui */
+    margin: 0; /* Remove margens padrão que podem interferir */
+}
+
+
+/* Estilo para parágrafos que não têm imagem (se você tiver alguns soltos) */
+p {
+    margin-bottom: 15px; /* Adiciona um espaçamento entre parágrafos normais */
+}
+
+
+.botao {
+    width: 210px; /* Mantém a largura fixa */
+    height: 70px; /* Mantém a altura fixa */
+    background-color: #333333;
+    display: inline-flex; /* Usa flexbox para centralizar conteúdo */
+    align-items: center; /* Centraliza verticalmente o texto */
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    padding: 10px 20px;
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 25px; /* Cantos bem arredondados para um visual moderno */
+    font-size: 15px; /* Aumenta um pouco o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidade */
+    transition: all 0.3s ease; /* Transição suave para interações */
+    cursor: pointer; /* Indica que é clicável */
+    border: none; /* Remove a borda padrão do botão */
+}
+
+.botao:hover {
+
+
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
+    transform: translateY(-3px); /* Leve elevação no hover */
+}
+
+
+.botao:active {
+    transform: translateY(1px); /* Pequeno afundamento ao clicar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra menor ao clicar */
+}
